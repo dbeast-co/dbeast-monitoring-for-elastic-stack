@@ -65,7 +65,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@grafana/data": "9.3.8",
-    "@grafana/runtime": "9.3.8",
+    "@grafana/runtime": "10.4.13",
     "@grafana/ui": "9.3.8",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
