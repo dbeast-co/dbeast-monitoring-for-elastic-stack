@@ -2984,8 +2984,125 @@ PUT _component_template/dbeast-mon-tsds-logstash-metrics-mapping-component
                           "time_series_metric": "gauge"
                         },
                         "flow": {
-                          "dynamic": false,
-                          "type": "object"
+                          "type": "object",
+                          "properties": {
+                            "worker_concurrency": {
+                              "type": "object",
+                              "properties": {
+                                "last_1_minute": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_1_hour": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "lifetime": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_15_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_5_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "current": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                }
+                              }
+                            },
+                            "queue_backpressure": {
+                              "type": "object",
+                              "properties": {
+                                "last_1_minute": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_1_hour": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "lifetime": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_15_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_5_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "current": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                }
+                              }
+                            },
+                            "worker_utilization": {
+                              "type": "object",
+                              "properties": {
+                                "last_1_minute": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_1_hour": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "lifetime": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_15_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_5_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "current": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                }
+                              }
+                            },
+                            "output_throughput": {
+                              "type": "object",
+                              "properties": {
+                                "last_1_minute": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_1_hour": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "lifetime": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_15_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "last_5_minutes": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                },
+                                "current": {
+                                  "time_series_metric": "gauge",
+                                  "type": "double"
+                                }
+                              }
+                            }
+                          }
                         },
                         "hash": {
                           "ignore_above": 256,
@@ -3396,127 +3513,6 @@ PUT _component_template/dbeast-mon-tsds-logstash-metrics-mapping-component
             "workers": {
               "type": "long",
               "time_series_metric": "gauge"
-            },
-            "flow": {
-              "type": "object",
-              "properties": {
-                "worker_concurrency": {
-                  "type": "object",
-                  "properties": {
-                    "last_1_minute": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_1_hour": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "lifetime": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_15_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_5_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "current": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    }
-                  }
-                },
-                "queue_backpressure": {
-                  "type": "object",
-                  "properties": {
-                    "last_1_minute": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_1_hour": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "lifetime": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_15_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_5_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "current": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    }
-                  }
-                },
-                "worker_utilization": {
-                  "type": "object",
-                  "properties": {
-                    "last_1_minute": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_1_hour": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "lifetime": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_15_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_5_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "current": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    }
-                  }
-                },
-                "output_throughput": {
-                  "type": "object",
-                  "properties": {
-                    "last_1_minute": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_1_hour": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "lifetime": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_15_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "last_5_minutes": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    },
-                    "current": {
-                      "time_series_metric": "gauge",
-                      "type": "double"
-                    }
-                  }
-                }
-              }
             }
           }
         },
