@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 1.0.2
+
+- Features:
+  * [FEAT] Add Flow parameters to the Logstash Host Overview dashboard #185[#185](https://github.com/dbeast-co/dbeast-monitor/issues/185)
+  * [FEAT] Define all Date histogram graphs "Max data points" #186[#186](https://github.com/dbeast-co/dbeast-monitor/issues/186)
+
+- Updated dashboards
+  * All dashboards
+
 ## Version 1.0.1
 
 - Features:

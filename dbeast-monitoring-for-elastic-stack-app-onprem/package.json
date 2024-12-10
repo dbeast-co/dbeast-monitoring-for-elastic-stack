@@ -1,6 +1,6 @@
 {
   "name": "dbeast-monitoring-for-elastic-stack-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DBeast Monitoring toolkit for Elastic Stack",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production ",
